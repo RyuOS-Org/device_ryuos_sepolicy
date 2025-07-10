@@ -10,14 +10,14 @@ endif
 endif
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lessaosp/sepolicy/exynos/private
+    device/ryuos/sepolicy/exynos/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lessaosp/sepolicy/exynos/dynamic \
-    device/lessaosp/sepolicy/exynos/system
+    device/ryuos/sepolicy/exynos/dynamic \
+    device/ryuos/sepolicy/exynos/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/lessaosp/sepolicy/exynos/dynamic \
-    device/lessaosp/sepolicy/exynos/vendor
+    device/ryuos/sepolicy/exynos/dynamic \
+    device/ryuos/sepolicy/exynos/vendor
 endif

@@ -10,22 +10,22 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/lessaosp/sepolicy/common/public
+    device/ryuos/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lessaosp/sepolicy/common/private
+    device/ryuos/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/lessaosp/sepolicy/common/dynamic \
-    device/lessaosp/sepolicy/common/system
+    device/ryuos/sepolicy/common/dynamic \
+    device/ryuos/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/lessaosp/sepolicy/common/dynamic \
-    device/lessaosp/sepolicy/common/vendor
+    device/ryuos/sepolicy/common/dynamic \
+    device/ryuos/sepolicy/common/vendor
 endif
 
 # Include atv rules on atv product
 ifeq ($(PRODUCT_IS_ATV), true)
-include device/lessaosp/sepolicy/atv/sepolicy.mk
+include device/ryuos/sepolicy/atv/sepolicy.mk
 endif
